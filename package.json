@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack --watch",
+    "dev": "nodemon --watch server server/index & webpack --watch",
     "test": "ava test/*.test.js"
   },
   "devDependencies": {
@@ -22,6 +22,10 @@
   "dependencies": {
     "autoprefixer": "^7.1.4",
     "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.16.2",
+    "knex": "^0.14.3",
+    "nodemon": "^1.15.0",
+    "pg": "^7.4.1",
     "postcss-loader": "^2.0.6",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",

@@ -1,0 +1,18 @@
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.wrapper__wrapper___U2M9E {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+}
+
+.wrapper__title___2oxFf {
+    background-color: #fff;
+    padding: 8px 16px;
+}
