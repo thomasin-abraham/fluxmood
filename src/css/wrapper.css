@@ -9,4 +9,14 @@
 .title {
     background-color: #fff;
     padding: 8px 16px;
+    margin: 0 16px;
+}
+
+.title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navBar {
+  display: flex;
 }

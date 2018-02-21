@@ -1,4 +1,4 @@
-.new__input___1rrh9 {
+.input {
     border: 1px solid #fff;
     padding: 8px 16px;
     margin: 24px;
@@ -7,17 +7,17 @@
     border: 3px solid transparent;
 }
 
-.new__input___1rrh9:focus {
+.input:focus {
   outline: none;
   border: 3px solid pink;
 }
 
-.new__userSelector___CZV9z {
+.userSelector {
   background-color: coral;
   margin: 48px;
 }
 
-.new__foundUser___1H4nv {
+.foundUser {
     text-align: center;
     border: none;
     border-bottom: 1px solid pink;
@@ -29,19 +29,19 @@
     cursor: pointer;
 }
 
-.new__foundUser___1H4nv:first-of-type {
+.foundUser:first-of-type {
   border-top: 1px solid pink;
 }
 
-.new__foundUser___1H4nv:hover {
+.foundUser:hover {
   color: #fff;
 }
 
-.new__foundUser___1H4nv:focus {
+.foundUser:focus {
   outline: none;
 }
 
-.new__number___1f_VH {
+.number {
   border: none;
   padding: 16px;
   font-family: 'Roboto Mono', monospace;
@@ -49,11 +49,11 @@
   cursor: pointer;
 }
 
-.new__number___1f_VH:focus {
+.number:focus {
   outline: none;
 }
 
-.new__progress___2eiJa {
+.progress {
   display: block;
   margin-top: 24px;
   font-size: 12px;
@@ -61,26 +61,27 @@
   width: 100%;
 }
 
-.new__submitButton___2KS1F {
+.submitButton {
+  composes: progress;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.new__submitButton___2KS1F:focus {
+.submitButton:focus {
   outline: none;
 }
 
-.new__submitButton___2KS1F:hover {
+.submitButton:hover {
   color: #fff;
 }
 
-.new__commentWrapper___3ovAt {
+.commentWrapper {
   display: flex;
   flex-direction: column;
 }
 
-.new__commentWrapper___3ovAt textarea {
+.commentWrapper textarea {
   border: 3px solid hotpink;
   background-color: transparent;
   font-family: 'Roboto Mono', monospace;
@@ -90,51 +91,26 @@
   resize: vertical;
 }
 
-.new__commentWrapper___3ovAt textarea:focus {
+.commentWrapper textarea:focus {
   outline: none;
   border-color: #fff;
 }
 
-.new__selectedMood___2Cz-b {
+.selectedMood {
   background-color: black !important;
   color: white;
 }
 
-.new__pendingStatus___3ze5y {
+.pendingStatus {
+  composes: progress;
 }
 
-.new__errorStatus___397mT {
+.errorStatus {
+  composes: progress;
   background-color: red;
 }
 
-.new__successStatus___2HLz8 {
+.successStatus {
+  composes: progress;
   background-color: green;
-}
-body {
-    min-height: 100vh;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Roboto Mono', monospace;
-}
-.wrapper__wrapper___U2M9E {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px;
-}
-
-.wrapper__title___2oxFf {
-    background-color: #fff;
-    padding: 8px 16px;
-    margin: 0 16px;
-}
-
-.wrapper__title___2oxFf a {
-  color: #000;
-  text-decoration: none;
-}
-
-.wrapper__navBar___u7FFf {
-  display: flex;
 }
