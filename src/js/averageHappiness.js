@@ -5,19 +5,15 @@ module.exports = {
 }
 
 function attach(data) {
+  const dim = setDimensions()
+  setTime(data)
 
-  // const dim = setDimensions()
-  // setTime(data)
+  const scales = setScales(data, dim)
+  let path = definePath(data, scales)
+  let g = createContainers(dim)
 
-  console.log(data)
-
-  // const scales = setScales(data, dim)
-
-  // let path = definePath(data, scales)
-  // let g = createContainers(dim)
-
-  // drawAxes(dim, scales)
-  // drawPath(data, g, path, dim.margin)
+  drawAxes(dim, scales)
+  drawPath(data, g, path, dim.margin)
 }
 
 function setDimensions () {

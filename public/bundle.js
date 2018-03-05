@@ -45139,19 +45139,15 @@ module.exports = {
 };
 
 function attach(data) {
+  var dim = setDimensions();
+  setTime(data);
 
-  // const dim = setDimensions()
-  // setTime(data)
+  var scales = setScales(data, dim);
+  var path = definePath(data, scales);
+  var g = createContainers(dim);
 
-  console.log(data);
-
-  // const scales = setScales(data, dim)
-
-  // let path = definePath(data, scales)
-  // let g = createContainers(dim)
-
-  // drawAxes(dim, scales)
-  // drawPath(data, g, path, dim.margin)
+  drawAxes(dim, scales);
+  drawPath(data, g, path, dim.margin);
 }
 
 function setDimensions() {
