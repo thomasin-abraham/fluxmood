@@ -6,7 +6,7 @@ var connection = require('knex')(config)
 
 var server = createServer(connection)
 
-var PORT = process.env.PORT || 3000
+var PORT = process.env.PORT || 8080
 
 if (require.main === module) {
   server.listen(PORT, function () {

@@ -7,16 +7,52 @@
 }
 
 .title {
+    display: block;
     background-color: #fff;
     padding: 8px 16px;
     margin: 0 16px;
-}
-
-.title a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .navBar {
   display: flex;
+}
+
+:global(svg) {
+  width:100%;
+  height: 600px;
+  margin-top: 48px;
+}
+
+:global(#moodPath) {
+  stroke: #fff;
+  stroke-width: 4;
+  fill: none;
+}
+
+:global(.leftAxis path) {
+  display: none;
+}
+
+:global(.leftAxis line) {
+  display: none;
+}
+
+:global(.leftAxis text) {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+}
+
+:global(.bottomAxis path) {
+  display: none;
+}
+
+:global(.bottomAxis line) {
+  display: none;
+}
+
+:global(.bottomAxis text) {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
 }

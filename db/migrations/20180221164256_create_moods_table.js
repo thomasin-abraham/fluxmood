@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
     table.integer('mood').notNullable()
     table.integer('user_id').unsigned().notNullable()
     table.foreign('user_id').references('id').inTable('users')
+    table.timestamp('created_at').defaultTo(knex.fn.now())
   })
 };
 

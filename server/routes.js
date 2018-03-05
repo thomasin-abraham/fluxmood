@@ -18,6 +18,18 @@ router.get('/allUsers', (req, res) => {
     })
 })
 
+router.get('/allMoods', (req, res) => {
+  moods.averageByDay(req.app.get('connection'))
+    .then((moods) => {
+      res.json(moods)
+      res.end()
+    })
+    .catch((err) => {
+      console.log(err)
+      res.sendStatus(500)
+    })
+})
+
 router.post('/newMood', ({ app, body }, res) => {
   moods.newMood(body.user_id, body.mood, app.get('connection'))
     .then((mood) => {

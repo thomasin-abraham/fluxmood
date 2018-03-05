@@ -2,6 +2,7 @@ import request from 'superagent'
 
 module.exports = {
   getUsers,
+  getMoods,
   newMood,
   newUser
 }
@@ -9,6 +10,12 @@ module.exports = {
 export function getUsers(callback) {
   request
     .get('/allUsers')
+    .end(callback)
+}
+
+export function getMoods(callback) {
+  request
+    .get('/allMoods')
     .end(callback)
 }
 

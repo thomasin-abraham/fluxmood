@@ -21,7 +21,14 @@ const App = () => {
   return (
     <Router>
       <div className={ styles.wrapper } style={{ backgroundColor: randomColour }} >
-        <Route path="/" component={ New } />
+
+        <div className={ styles.navBar } >
+          <Link to='/' className={ styles.title } >home</Link>
+          <Link to='/new' className={ styles.title } >new</Link>
+        </div>
+
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/new" component={ New } />
       </div>
     </Router>
   )

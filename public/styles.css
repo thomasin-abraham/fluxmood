@@ -125,16 +125,52 @@ body {
 }
 
 .wrapper__title___2oxFf {
+    display: block;
     background-color: #fff;
     padding: 8px 16px;
     margin: 0 16px;
-}
-
-.wrapper__title___2oxFf a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .wrapper__navBar___u7FFf {
   display: flex;
+}
+
+svg {
+  width:100%;
+  height: 600px;
+  margin-top: 48px;
+}
+
+#moodPath {
+  stroke: #fff;
+  stroke-width: 4;
+  fill: none;
+}
+
+.leftAxis path {
+  display: none;
+}
+
+.leftAxis line {
+  display: none;
+}
+
+.leftAxis text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+}
+
+.bottomAxis path {
+  display: none;
+}
+
+.bottomAxis line {
+  display: none;
+}
+
+.bottomAxis text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
 }
