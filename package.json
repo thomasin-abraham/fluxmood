@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node server/index",
     "build": "webpack",
     "dev": "nodemon --watch server server/index & webpack --watch",
     "test": "ava test/*.test.js"
